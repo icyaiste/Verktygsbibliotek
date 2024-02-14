@@ -17,6 +17,29 @@
     grid-column: auto/span 2;
     display: flex;
     justify-content: space-around;
+
+    & .available , .unavailable{
+        display: flex;
+        align-items: center;
+    }
+
+    & .green{
+        border: solid #17D606;
+        background-color: #17D606;
+        border-radius:50%;
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+    }
+
+    & .red{
+        border: solid #E20404;
+        background-color: #E20404;
+        border-radius:50%;
+        height: 15px;
+        width: 15px;
+        margin-right: 10px;
+    }
 }
 
 .filtering {
@@ -24,6 +47,13 @@
     grid-column: auto/span 2;
     display: flex;
     justify-content: space-between;
+
+    & button{
+        width: 120px;
+        height: fit-content;
+        font-size: 15px;
+        border-radius: 15px;
+    }
 }
 
 .input1 {
