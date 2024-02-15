@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
+
 * {
     box-sizing: border-box;
 }
@@ -9,11 +11,12 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(18, 1fr);
+    font-family: "Lato";
 }
 
 header {
     grid-row: 1 /span 2;
-    background-color: blue;
+    background-color: #1E2D47;
 }
 
 menu {
@@ -21,17 +24,19 @@ menu {
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
     grid-template-rows: repeat(5, 1fr);
+    row-gap: 3px;
     padding: 10px;
     margin: 0;
 }
 
 main {
     grid-row: 9/ span 8;
+    grid-column: span 2;
     display: flex;
     flex-direction: column;
 }
 
 footer {
     grid-row: 17/span 2;
-    background-color: blue;
+    background-color: #1E2D47;
 }

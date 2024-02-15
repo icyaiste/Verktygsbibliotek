@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 .item {
     display: flex;
     background-color: #C7CEDB;
@@ -6,36 +8,95 @@
 
     & .item-image {
         max-width: 150px;
-        max-height: 150px;
+        max-height: 120px;
+    }
 
-        &.item-description {}
+    & .item-description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: solid #FFF 1px;
+    }
+
+    & .green {
+        border: solid #17D606;
+        background-color: #17D606;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        margin-left: 15px;
+    }
+
+    & .red {
+        border: solid #E20404;
+        background-color: #E20404;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+        margin-left: 15px;
+    }
+
+    & .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 19px;
+        font-weight: 700;
+    }
+
+    & .standard {
+        width: 170px;
+        height: 38px;
+        font-size: 20px;
+        border-radius: 10px;
+        border-style: none;
+        background-color: #FFF;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    & .reserverad {
+        width: 170px;
+        height: 38px;
+        font-size: 18px;
+        color: #FFF;
+        border-radius: 10px;
+        border-style: none;
+        background-color: rgba(226, 4, 4, 0.2);
+        margin-right: auto;
+        margin-left: auto;
     }
 }
+
+
 
 .availability {
     grid-row: 4;
     grid-column: auto/span 2;
     display: flex;
     justify-content: space-around;
+    height: 39px;
 
-    & .available , .unavailable{
+    & .available,
+    .unavailable {
         display: flex;
         align-items: center;
+        font-weight: 500;
     }
 
-    & .green{
+    & .green {
         border: solid #17D606;
         background-color: #17D606;
-        border-radius:50%;
+        border-radius: 50%;
         height: 15px;
         width: 15px;
         margin-right: 10px;
     }
 
-    & .red{
+    & .red {
         border: solid #E20404;
         background-color: #E20404;
-        border-radius:50%;
+        border-radius: 50%;
         height: 15px;
         width: 15px;
         margin-right: 10px;
@@ -48,38 +109,52 @@
     display: flex;
     justify-content: space-between;
 
-    & button{
-        width: 120px;
-        height: fit-content;
+    & button {
+        width: 140px;
+        height: 38px;
         font-size: 15px;
-        border-radius: 15px;
+        border-radius: 10px;
+        border-color: rgba(1, 1, 1, 0.5);
+        background-color: #FFF;
     }
 }
 
 .input1 {
     grid-row: 1;
     grid-column: span 2;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left:auto;
+    margin-right:auto;
     text-align: center;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #C7CEDB;
+    width: 90%;
 }
 
 .input2 {
     grid-row: 2;
     grid-column: span 2;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left:auto;
+    margin-right:auto;
     text-align: center;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #C7CEDB;
+    width: 90%;
+    
 }
 
 .input3 {
     grid-row: 3;
     grid-column: span 2;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left:auto;
+    margin-right:auto;
     text-align: center;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #C7CEDB;
+    width: 90%;
 }
-
 
 
 nav {
@@ -92,7 +167,7 @@ nav {
         margin-right: auto;
     }
 
-    & .placeholder{
-        margin-right:auto;
+    & .location {
+        margin-right: auto;
     }
 }
