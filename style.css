@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap')
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap') * {
     box-sizing: border-box;
 }
 
@@ -22,11 +20,13 @@ header {
 menu {
     grid-row: 4 /span 5;
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     row-gap: 3px;
     padding: 10px;
     margin: 0;
+    padding-left: 30px;
+    position: relative;
 }
 
 main {
@@ -39,4 +39,32 @@ main {
 footer {
     grid-row: 17/span 2;
     background-color: #1E2D47;
+}
+
+.search-icon,
+.category-icon,
+.calender-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: translateY(-10%);
+    opacity: 50%;
+}
+
+.search-icon {
+    left: 15%;
+    top: 9%;
+}
+
+.category-icon {
+    left: 15%;
+    top: 28%;
+}
+
+.calender-icon {
+    left: 15%;
+    top: 45%;
+    width: 25px;
+    height: 25px;
+    opacity: 40%;
 }
