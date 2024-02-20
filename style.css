@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-color: #1E2D47;
+  }
+
 body {
     max-width: 100vw;
     max-height: 100vh;
@@ -14,7 +18,7 @@ body {
 
 header {
     grid-row: 1 /span 2;
-    background-color: #1E2D47;
+    background-color: var(--header-color);
 }
 
 menu {
@@ -27,6 +31,34 @@ menu {
     margin: 0;
     padding-left: 30px;
     position: relative;
+
+    & .search-icon,
+    .category-icon,
+    .calender-icon {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        transform: translateY(-10%);
+        opacity: 50%;
+    }
+
+    .search-icon {
+        left: 15%;
+        top: 9%;
+    }
+
+    .category-icon {
+        left: 15%;
+        top: 28%;
+    }
+
+    .calender-icon {
+        left: 15%;
+        top: 45%;
+        width: 25px;
+        height: 25px;
+        opacity: 40%;
+    }
 }
 
 main {
@@ -38,33 +70,5 @@ main {
 
 footer {
     grid-row: 17/span 2;
-    background-color: #1E2D47;
-}
-
-.search-icon,
-.category-icon,
-.calender-icon {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    transform: translateY(-10%);
-    opacity: 50%;
-}
-
-.search-icon {
-    left: 15%;
-    top: 9%;
-}
-
-.category-icon {
-    left: 15%;
-    top: 28%;
-}
-
-.calender-icon {
-    left: 15%;
-    top: 45%;
-    width: 25px;
-    height: 25px;
-    opacity: 40%;
+    background-color: var(--header-color);
 }
