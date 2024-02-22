@@ -3,15 +3,33 @@
 
 :root {
     --btn-color: #C7CEDB;
-    --available-color:#17D606;
+    --available-color: #17D606;
     --unavailable-color: #E20404;
     --reserverad-btn: rgba(226, 4, 4, 0.2);
-    --input_field-color:#C7CEDB;
-  }
+    --input_field-color: #C7CEDB;
+    --delete_btn-color: #D0AEB7;
+}
+
+nav {
+    grid-row: 3/span 1;
+    grid-column: auto /span 2;
+    height: 55px;
+    display: flex;
+    align-items: center;
+
+    & .navicon {
+        width: 25px;
+        margin-right: auto;
+    }
+
+    & .location {
+        margin-right: auto;
+    }
+}
 
 .item {
     display: flex;
-    background-color:var(--btn-color);
+    background-color: var(--btn-color);
     width: 100%;
     height: 100%;
 
@@ -95,7 +113,7 @@
 
     & .green {
         border: solid var(--available-color);
-        background-color:var(--available-color);
+        background-color: var(--available-color);
         border-radius: 50%;
         height: 15px;
         width: 15px;
@@ -131,8 +149,8 @@
 .input1 {
     grid-row: 1;
     grid-column: span 2;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     border-radius: 10px;
     border-style: none;
@@ -143,21 +161,21 @@
 .input2 {
     grid-row: 2;
     grid-column: span 2;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     border-radius: 10px;
     border-style: none;
     background-color: var(--input_field-color);
     width: 90%;
-    
+
 }
 
 .input3 {
     grid-row: 3;
     grid-column: span 2;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     border-radius: 10px;
     border-style: none;
@@ -165,18 +183,81 @@
     width: 90%;
 }
 
-
-nav {
-    grid-row: 3/span 1;
-    grid-column: auto /span 2;
+footer {
     display: flex;
+    background-color: var(--header-color);
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-    & .navicon {
-        width: 25px;
-        margin-right: auto;
+.rented-card {
+    grid-row: auto / span 4;
+    display: flex;
+    width: 320px;
+    height: 100%;
+    border: solid 1px rgb(0, 0, 0, 0.2);
+
+    & .item-image {
+        max-width: 150px;
+        max-height: 120px;
     }
 
-    & .location {
-        margin-right: auto;
+    & .item-description {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: solid #FFF 1px;
+    }
+
+    & .technical-btn {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 30%;
+        font-size: 15px;
+        font-family: 'Lato';
+        font-weight: 500;
+        background-color: #FFF;
+        border: solid rgb(0, 0, 0, 0.5) 1px;
+    }
+
+    & .chevron{
+        width: 20px;
+        margin-left: auto;
+    }
+}
+
+.break-line{
+    grid-row: auto / span 1;
+    border: solid rgb(0,0,0, 0.2) 1px;
+    width: 100%;
+    margin: 8% auto 8% auto;
+}
+
+.confirmation{
+    display: flex;
+    justify-content: space-between;
+
+    & .standard_button {
+        width: 142px;
+        height: 38px;
+        margin-top: 7%;
+        font-size: 20px;
+        border-radius: 10px;
+        border: solid rgb(0,0,0, 0.5) 1px;
+        background-color: #FFF;
+    }
+
+    & .reserverad_button {
+        width: 142px;
+        height: 38px;
+        margin-top: 7%;
+        font-size: 18px;
+        color: #FFF;
+        border-radius: 10px;
+        border-style: none;
+        background-color: var(--delete_btn-color);
+        border: solid rgb(0,0,0, 0.5) 1px;
     }
 }
