@@ -8,6 +8,7 @@
     --reserverad-btn: rgba(226, 4, 4, 0.2);
     --input_field-color: #C7CEDB;
     --delete_btn-color: #D0AEB7;
+    --pickup_text-color: #008000;
 }
 
 nav {
@@ -191,7 +192,7 @@ footer {
 }
 
 .rented-card {
-    grid-row: auto / span 4;
+    grid-row: auto;
     display: flex;
     width: 320px;
     height: 100%;
@@ -222,20 +223,20 @@ footer {
         border: solid rgb(0, 0, 0, 0.5) 1px;
     }
 
-    & .chevron{
+    & .chevron {
         width: 20px;
         margin-left: auto;
     }
 }
 
-.break-line{
+.break-line {
     grid-row: auto / span 1;
-    border: solid rgb(0,0,0, 0.2) 1px;
+    border: solid rgb(0, 0, 0, 0.2) 1px;
     width: 100%;
     margin: 8% auto 8% auto;
 }
 
-.confirmation{
+.confirmation {
     display: flex;
     justify-content: space-between;
 
@@ -245,7 +246,7 @@ footer {
         margin-top: 7%;
         font-size: 20px;
         border-radius: 10px;
-        border: solid rgb(0,0,0, 0.5) 1px;
+        border: solid rgb(0, 0, 0, 0.5) 1px;
         background-color: #FFF;
     }
 
@@ -258,6 +259,28 @@ footer {
         border-radius: 10px;
         border-style: none;
         background-color: var(--delete_btn-color);
-        border: solid rgb(0,0,0, 0.5) 1px;
+        border: solid rgb(0, 0, 0, 0.5) 1px;
+    }
+}
+
+.return_info {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 5% 0;
+    font-size: 15px;
+
+    & .pickup_part {
+        display: flex;
+        height: 27px;
+    }
+
+    & .pickup_text {
+        color: var(--pickup_text-color);
+        font-weight: 600;
+    }
+
+    & .return_text {
+        color: var(--unavailable-color);
+        font-weight: 600;
     }
 }

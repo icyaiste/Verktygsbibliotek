@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/components.css">
-    <title>Checkout</title>
+    <title>Kvitto</title>
 </head>
 
 <body>
     <header></header>
     <nav>
-        <img class="navicon" src="/bilder/left-arrow-svgrepo-com.svg">
-        <h3 class="location">Checkout</h3>
+        <h3 class="location_kvitto">Kvitto</h3>
     </nav>
-    <h3 class="info"> Du har valt att låna :</h3>
-    <main class="rented-cards">
+    <h3 class="info"> Du har lånat :</h3>
+    <main class="rented_items">
         <section class="rented-card">
             <img class="item-image" src="/bilder/borrhammare.jpg">
             <article class="item-description">
@@ -27,27 +26,39 @@
                 </button>
             </article>
         </section>
-        <section class="confirmation">
-            <button class="standard_button"> Bekräfta</button>
-            <button class="reserverad_button">Ta bort</button>
-        </section>
+        <article class="return_info">
+            <div class="pickup_part">
+                <p class="pickup_text">Upphämtning tidigast</p>
+                <p>: 2024/02/28 08:00</p>
+            </div>
+            <div class="pickup_part">
+                <p class="return_text">Återlämning senast</p>
+                <p>: 2024/03/05 20:00</p>
+            </div>
+            <p>Verktygs plats : A 5</p>
+        </article>
         <div class="break-line"></div>
         <section class="rented-card">
             <img class="item-image" src="/bilder/borrmaskin.jpg">
             <article class="item-description">
-                <h3>Borrhammare</h3>
+                <h3>Borrmaskin</h3>
                 <button class="technical-btn">
                     <p class="technical-text">Teknisk specifikation</p>
                     <img class="chevron" src="/bilder/chevron-right-svgrepo-com (2).svg">
                 </button>
             </article>
         </section>
-        <section class="confirmation">
-            <button class="standard_button"> Bekräfta</button>
-            <button class="reserverad_button">Ta bort</button>
-        </section>
-        <div class="break-line"></div>
-        <a href="/kvitto.html" <button class="checkout">Checkout</button></a>
+        <article class="return_info">
+            <div class="pickup_part">
+                <p class="pickup_text">Upphämtning tidigast</p>
+                <p>: 2024/02/28 08:00</p>
+            </div>
+            <div class="pickup_part">
+                <p class="return_text">Återlämning senast</p>
+                <p>: 2024/03/05 20:00</p>
+            </div>
+            <p>Verktygs plats : A 17</p>
+        </article>
     </main>
     <footer>
         <section>

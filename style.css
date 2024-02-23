@@ -21,7 +21,7 @@ header {
     background-color: var(--header-color);
 }
 
-.info{
+.info {
     grid-row: 4;
     text-align: center;
 }
@@ -74,18 +74,24 @@ main {
     margin: 0;
 }
 
-.rented-cards{
+.rented-cards {
     grid-row: 5 / span 10;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
 }
 
+.rented_items {
+    grid-row: 5 / span 3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
     grid-row: 17/span 2;
 }
 
-.checkout{
+.checkout {
     grid-row: auto /span 1;
     width: 180px;
     height: 50px;
@@ -93,7 +99,14 @@ footer {
     align-self: center;
     border-radius: 10px;
     background-color: #FFF;
-    border: solid rgb(0,0,0, 0.5) 1px;
+    border: solid rgb(0, 0, 0, 0.5) 1px;
     font-family: 'Lato';
     font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.location_kvitto {
+    margin-left: auto;
+    margin-right: auto;
 }
