@@ -19,13 +19,56 @@ nav {
     align-items: center;
 
     & .navicon {
-        width: 25px;
+        width: 28px;
         margin-right: auto;
     }
 
     & .location {
         margin-right: auto;
     }
+}
+
+.input1 {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--input_field-color);
+    width: 90%;
+    text-align: left;
+    text-indent: 50px;
+    font-size: 18px;
+}
+
+.input2 {
+    grid-row: 2;
+    grid-column: span 2;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--input_field-color);
+    width: 90%;
+    text-align: left;
+    text-indent: 50px;
+    font-size: 18px;
+}
+
+
+.input3 {
+    grid-row: 3;
+    grid-column: span 2;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-style: none;
+    background-color: var(--input_field-color);
+    width: 90%;
+    text-align: left;
+    text-indent: 50px;
+    font-size: 18px;
 }
 
 .item {
@@ -147,42 +190,6 @@ nav {
     }
 }
 
-.input1 {
-    grid-row: 1;
-    grid-column: span 2;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: 10px;
-    border-style: none;
-    background-color: var(--input_field-color);
-    width: 90%;
-}
-
-.input2 {
-    grid-row: 2;
-    grid-column: span 2;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: 10px;
-    border-style: none;
-    background-color: var(--input_field-color);
-    width: 90%;
-
-}
-
-.input3 {
-    grid-row: 3;
-    grid-column: span 2;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: 10px;
-    border-style: none;
-    background-color: var(--input_field-color);
-    width: 90%;
-}
 
 footer {
     display: flex;
